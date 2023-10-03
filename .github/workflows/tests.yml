@@ -1,0 +1,35 @@
+name: Test Suite
+
+on:
+  push:
+    branches:
+      - 'master'
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  tests:
+    name: Run Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Javascript Dependencies
+        run: npm ci
+
+      - name: Install Zapier Platform SDK
+        run: npm install -g zapier-platform-cli
+
+      - name: Validate App
+        run: zapier validate
+
+      - name: Run Tests
+        run: zapier test

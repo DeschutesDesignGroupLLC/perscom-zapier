@@ -1,0 +1,19 @@
+{
+  "name": "perscom-zapier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier './**/*.{js,json}' --write --config ./.prettierrc",
+    "test": "jest --testTimeout 10000"
+  },
+  "dependencies": {
+    "zapier-platform-core": "15.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0",
+    "nock": "^13.3.3",
+    "prettier": "^3.0.3"
+  },
+  "private": true
+}
