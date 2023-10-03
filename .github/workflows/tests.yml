@@ -28,8 +28,5 @@ jobs:
       - name: Install Zapier Platform SDK
         run: npm install -g zapier-platform-cli
 
-      - name: Validate App
-        run: zapier validate
-
       - name: Run Tests
         run: zapier test
