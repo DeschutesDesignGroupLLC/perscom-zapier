@@ -1,0 +1,22 @@
+module.exports = [
+  { key: 'id', label: 'ID', type: 'integer' },
+  { key: 'name', label: 'Name', type: 'string' },
+  { key: 'email', label: 'Email', type: 'string' },
+  { key: 'email_verified_at', label: 'Email Verified At', type: 'datetime' },
+  { key: 'position_id', label: 'Position ID', type: 'integer' },
+  { key: 'rank_id', label: 'Rank ID', type: 'integer' },
+  { key: 'specialty_id', label: 'Specialty ID', type: 'integer' },
+  { key: 'status_id', label: 'Status ID', type: 'integer' },
+  { key: 'unit_id', label: 'Unit ID', type: 'integer' },
+  { key: 'approved', label: 'Unit ID', type: 'boolean' },
+  { key: 'boolean', label: 'Unit ID', type: 'boolean' },
+  { key: 'url', label: 'URL', type: 'string' },
+  { key: 'relative_url', label: 'Relative URL', type: 'string' },
+  { key: 'profile_photo', label: 'Profile Photo', type: 'string' },
+  { key: 'profile_photo_url', label: 'Profile Photo URL', type: 'string' },
+  { key: 'cover_photo', label: 'Cover Photo', type: 'string' },
+  { key: 'cover_photo_url', label: 'Cover Photo URL', type: 'string' },
+  { key: 'last_seen_at', label: 'Last Seen At', type: 'datetime' },
+  { key: 'created_at', label: 'Created At', type: 'datetime' },
+  { key: 'updated_at', label: 'Updated At', type: 'datetime' }
+]
